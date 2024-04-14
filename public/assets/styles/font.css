@@ -1,0 +1,191 @@
+html { font-size: 62.5%; /* 10px */ }
+
+@media (max-width: 639.98px) {
+    body, 
+    a, 
+    p, 
+    ol,
+    ul,
+    dl,
+    pre,
+    address, 
+    blockquote, 
+    form input, 
+    form select, 
+    form textarea, 
+    form label, 
+    button, 
+    .v-col,
+    .has-regular-font-size { 
+        font: 1.2rem/1.6rem 'Roboto', sans-serif;
+    }
+
+    h1:not([class*='font-size']),
+    .has-xx-large-font-size {
+        font: 2.2rem/3rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h2:not([class*='font-size']),
+    .has-x-large-font-size {
+        font: 1.8rem/2.6rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    
+    h3:not([class*='font-size']),
+    .has-large-font-size {
+        font: 1.6rem/2.4rem 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    h4:not([class*='font-size']), .has-medium-font-size {
+        font: 1.5rem/2.0rem 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .caption, .has-small-font-size { 
+        font: 1.0rem/1.4rem 'Roboto', sans-serif; 
+    }
+
+}
+
+@media (min-width: 640px) and (max-width: 1599.98px) {
+
+    /* Font Sizes */
+    body, 
+    a, 
+    p, 
+    ol,
+    ul,
+    dl,
+    pre,
+    address, 
+    blockquote, 
+    form input, 
+    form select, 
+    form textarea, 
+    form label, 
+    button, 
+    .v-col,
+    .has-regular-font-size {
+        font: 1.5rem/2.0rem 'Roboto', sans-serif;
+    }
+
+    h1:not([class*='font-size']), .has-xx-large-font-size {
+        font: 3.0rem/3.8rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h2:not([class*='font-size']),
+    .has-x-large-font-size {
+        font: 2.3rem/2.9rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h3:not([class*='font-size']),
+    .has-large-font-size {
+        font: 1.8rem/2.6rem 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    h4:not([class*='font-size']), .has-medium-font-size {
+        font: 1.6rem/2.2rem 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .caption, .has-small-font-size { 
+        font: 1.2rem/1.8rem 'Roboto', sans-serif; 
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    /* Font Sizes */
+    body, 
+    a, 
+    p, 
+    ol,
+    ul,
+    dl,
+    pre,
+    address, 
+    blockquote, 
+    form input, 
+    form select, 
+    form textarea, 
+    form label, 
+    button, 
+    .v-col,
+    .has-regular-font-size {
+        font: 1.5rem/2.0rem 'Roboto', sans-serif;
+    }
+
+    h1:not([class*='font-size']), .has-xx-large-font-size {
+        font: 3.0rem/3.8rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h2:not([class*='font-size']), .has-x-large-font-size {
+        font: 2.4rem/3.6rem 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h3:not([class*='font-size']), .has-large-font-size {
+        font: 2.1rem/2.9rem 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    h4:not([class*='font-size']), .has-medium-font-size {
+        font: 1.8rem/2.6rem 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .caption, .has-small-font-size { 
+        font: 1.4rem/1.9rem 'Roboto', sans-serif; 
+    }
+
+}
+
+/* Font Weights */
+b, strong, .has-bold-font-weight { font-weight: 700 !important; }
+.has-semibold-font-weight, .has-medium-font-weight { font-weight: 500 !important; }
+.has-regular-font-weight { font-weight: 400 !important; }
+.has-light-font-weight { font-weight: 300 !important; }
+
+/* Font Styles */
+ul li { list-style-position: inside; }
+ul.inline li { display: inline; }
+.has-float-right { float: right; }
+.has-float-left { float: left; }
+em, .has-italic-font-style { font-style: italic !important; }
+.is-uppercase { text-transform: uppercase; }
+u, .has-underline { text-decoration: underline; } 
+.no-underline { text-decoration: none; }
+.has-text-center { text-align: center; }
+.has-text-right { text-align: right; }
+.text-align-right { text-align: right; }
+.has-right-aligned-text > * { text-align: right; }
+.has-text-left { text-align: left; }
+.has-text-no-wrap { white-space: nowrap; }
+.has-font-size-0 { font-size: 0; }
+
+@media (max-width: 639.98px) {
+    
+    .has-sm-text-left{
+        text-align: left;
+    }
+
+    .has-sm-text-center {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 640px) {
+
+    .has-md-text-center{
+        text-align: center;
+    }
+
+}

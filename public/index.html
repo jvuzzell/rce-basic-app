@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>RCE Basic - Home Page</title>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/variables.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/button-anchors.css">
+    <link rel="stylesheet" href="assets/styles/color-palette.css">
+    <link rel="stylesheet" href="assets/styles/font.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
+    <link rel="stylesheet" href="assets/styles/icons.css">
+    <link rel="stylesheet" href="assets/styles/margin-padding.css">
+    <link rel="stylesheet" href="assets/styles/tables-style.css">
+</head>
+<body data-overlay="inactive" data-loading-screen>
+
+    <section class="main-content">
+        <div class="content-lock">
+            <nav class="has-mg-bottom-20">
+                <ul class="inline">
+                    <li class="has-mg-right-10"><a href="/" class="has-underline">Home Page</a></li>
+                    <li><a href="/readme" class="has-underline">Readme Page</a></li>
+                </ul>
+            </nav>
+            <div id="app"></div>
+        </div>
+    </section>
+
+    <div data-fly-containers></div>
+
+    <script type="module" src="main.js" defer></script>
+</body>
+</html>

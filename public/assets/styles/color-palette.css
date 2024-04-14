@@ -1,0 +1,52 @@
+/* Background Color */
+
+.has-background-color-white {
+    background-color: white;
+}
+
+/* Color */
+.has-white-color {
+    color: white;
+}
+
+/* Border Color */
+.has-border-white-color {
+    border-color: white !important;
+}
+ 
+.btn-has-background-mint { 
+    background-color: var(--mint);
+}
+
+.btn-has-background-sandstorm { 
+    background-color: var(--sandstorm);
+} 
+
+.btn-has-background-demin { 
+    background-color: var(--denim);
+}
+
+.btn-has-background-white { 
+    background-color: #fff;
+}
+
+.has-background-color-off-white { 
+    background-color: #f5f5f5;
+}
+
+.btn-has-background-watermelon { 
+    background-color: var(--watermelon);
+}
+ 
+.has-background-color-dark { 
+    background-color: var(--secondary-color);
+}
+
+.has-background-color-beige { 
+    background-color: var(--beige);
+}
+
+.has-background-color-cyan { 
+    background-color: var(--cyan); 
+    color: white;
+}

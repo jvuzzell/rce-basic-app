@@ -1,0 +1,49 @@
+:root {
+    /* Transition Speeds */
+    --transition-speed-slow-medium: 750ms;
+    --transition-speed-slow: 500ms;
+    --transition-speed: 300ms; 
+    --transition-speed-medium: 225ms; 
+    --transition-speed-fast: 175ms; 
+
+    /* Color */
+    --main-color: #e05206; 
+    --secondary-color: #2B2D41;
+    --dark-gray: #B4B4B4;
+    --success: #126b37; 
+    --mint: #63EFBE;
+    --jade: #0CA678;    
+    --failure: #E03131; 
+    --watermelon: #FFB2B2; 
+    --salmon: #FE8787; 
+    --gray: #E6E6E6; 
+    --border-1: #B4B4B4; 
+    --lemon: #FFF9B2;
+    --sandstorm: #FFD43B;
+    --denim: #74C0FC; 
+    --cyan: #146EBE; 
+    --beige: #FDF4E3;  
+
+    /* Dropshadows */
+    --solid-dropshadow: 0px 5px 0px 0px #fff; 
+    --solid-dropshadow-lg: 0px 8px 0px 0px #2B2D41; 
+    --solid-dropshadow-hover: 0px 3px 0px 1px #2B2D41; 
+    --solid-dropshadow-active:  0px 0px 0px 1px #2B2D41; 
+
+    /* Border */
+    --border-radius: 10px;  
+    --border-radius-lg: 15px; 
+    --card-border: 2px solid var(--secondary-color);  
+
+    /* Vertical Spacing */
+    --vertical-spacing-x-lg: 15px; 
+    --vertical-spacing-lg: 15px; 
+    --vertical-spacing-md: 15px; 
+    --vertical-spacing-sm: 10px; 
+
+    /* Gutters */
+    --gutter-x-lg: 10px; 
+    --gutter-lg: 10px; 
+    --gutter-md: 10px; 
+    --gutter-sm: 10px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #2 - Component & Event Bus</title>
+</head>
+<body>
+
+    <div data-inline-template="exampleComponent">
+        <h1 data-heading></h1>
+        <form>
+            <input type="text" data-input/>
+        </form>
+    </div>
+
+    <script type="module">
+        import { Factory, ComponentConfigs, ComponentProps } from '/component-builder-and-event-bus/Factory.js'; 
+
+        (function(
+            Factory,
+            ComponentConfigs
+        ){
+            var initialState = {
+                componentName : 'exampleComponent', 
+                heading : 'Hello World'
+            };
+
+            // Step 1 - Configuration
+            ComponentConfigs.exampleComponent = {
+
+                eventBus : [ 'GlobalComponentEvents' ],
+                state : initialState, 
+                props : {
+                    eventListeners : {
+                        onChangeFormInput : {
+                            listener : 'keyup',
+                            selector : '[data-input]', 
+                            callback : ( event, component, componentKey ) => {
+                                component.dispatch.commitHeading( event.target.value );
+                            }
+                        }, 
+                    }
+                },
+                hooks : {
+
+                    onMount : function( state ) {
+                        this.component().dispatch.updateHeading( state.heading);
+                    }, 
+
+                    onUpdate : function( delta ) { 
+                        this.component().dispatch.updateHeading( delta.heading);
+                    }
+
+                },  
+                dispatch : {
+                    
+                    commitHeading : function( inputValue ) {
+                        this.component().commit.state({ 'heading' : inputValue });
+                    },
+
+                    updateHeading : function( heading ) { 
+                        let node = this.component().get.inlineTemplateNode();
+                        node.querySelector('[data-heading]').innerText = heading;
+                    },
+
+                }
+            }
+
+            // Step 2 - Registration
+            Factory.registerComponent( ComponentConfigs.exampleComponent );
+
+        })(
+            Factory,
+            ComponentConfigs
+        );
+
+    </script>
+</body>
+</html>

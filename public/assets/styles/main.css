@@ -1,0 +1,116 @@
+.hidden-text {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0; 
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+/**
+ * Layout
+ */ 
+
+ .main-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;  
+}
+
+.main-content {
+    /* margin-left: 320px; */
+    /* transform: translateX(360px); */
+    padding: 30px 0px;
+    display: block;
+    position: relative;
+    -webkit-transition: all var(--transition-speed) ease-out;
+    transition: all var(--transition-speed) ease-out;
+	min-height: 100vh;
+}
+
+/* Content Lock */
+
+.content-lock {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+} 
+
+@media (max-width: 1920px) {
+
+    .content-lock {
+        padding-left: 40px; 
+        padding-right: 40px;
+    }
+
+}
+
+@media (max-width: 1279px) {
+
+    .content-lock {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+}
+
+/* Card Styling */
+.standard-card {
+    padding: 10px 20px 0 20px; /* Omit padding on bottom because of margin on v-col */
+    border-radius: var(--border-radius-lg); 
+    border: var(--card-border); 
+    box-shadow: var(--solid-dropshadow-lg);
+    background-color: #ffffff;
+}
+
+.standard-card.no-background {
+    border-radius: 0;
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.has-right-aligned-content > * {
+    float: right;
+}
+
+hr {
+    background-color: var(--border-1); 
+}
+
+hr.thick-line {
+    height: 7px; 
+}
+
+table {
+    min-width: 100%;
+}
+
+.has-large-border-radius {
+    border-radius: 100px;
+}
+
+.has-standard-border-radius {
+    border-radius: 5px;
+}
+
+.has-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.has-border {
+    border: 1px solid var(--border-1);
+}
+
+.has-thick-border {
+    border: 3px solid var(--border-1);
+}
+
+
+.logo + h1 { 
+    display: inline; 
+} 
